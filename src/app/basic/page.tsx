@@ -13,11 +13,11 @@ const Home = () => {
   return (
     <div>
       <h1>
-        This is a simple LLM App with built with Langchain Expression Language{" "}
+        {`This is a simple LLM App with built with Langchain Expression Language{" "}
         <br />
         new SystemMessage("Translate the following from English into Italian."){" "}
         <br />
-        new HumanMessage("I love you!"),
+        new HumanMessage("I love you!"),`}
       </h1>
       <button onClick={displayContent}>Generate</button>
       {res && (
