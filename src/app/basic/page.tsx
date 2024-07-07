@@ -22,7 +22,7 @@ const Home = () => {
       )}
 
       <p>
-        Find code in my github{" "}
+        Find code in my github
         <span>
           <a href="https://github.com/biwasbhandari" target="_blank">
             Biwas Bhandari
