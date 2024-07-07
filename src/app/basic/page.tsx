@@ -4,11 +4,15 @@ import { generateResponse } from "@/utils/basicPrompt";
 
 const Home = () => {
   const [res, setRes] = useState<string | null>(null);
-  const [humanMessage, setHumanMessage] = useState<string>("Hello there");
+  const [humanMessage, setHumanMessage] = useState<string>("");
 
   const displayContent = async () => {
-    const response = await generateResponse(humanMessage);
-    setRes(response);
+    if (!humanMessage) {
+      alert("Input cannot be empty");
+    } else {
+      const response = await generateResponse(humanMessage);
+      setRes(response);
+    }
   };
 
   return (
@@ -18,7 +22,8 @@ const Home = () => {
         type="text"
         value={humanMessage}
         onChange={(e) => setHumanMessage(e.target.value)}
-        placeholder="Type something to translate."
+        // placeholder="Type something to translate."
+        required
       />
       <button onClick={displayContent}>Generate</button>
       {res && (
