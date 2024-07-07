@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { generateResponse } from "@/utils/prompt";
-import Link from "next/link";
+import { generateResponse } from "@/utils/basicPrompt";
 
 const Home = () => {
   const [res, setRes] = useState<string | null>(null);
