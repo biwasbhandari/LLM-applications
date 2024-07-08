@@ -1,10 +1,10 @@
-import Link from "next/link";
 import React from "react";
+import Home from "@/components/main/Home";
 
 const page = () => {
   return (
-    <div>
-      <Link href={`translator`}>Basic LLM App using Langchain</Link>
+    <div className="p-10 flex gap-5">
+      <Home />
     </div>
   );
 };
