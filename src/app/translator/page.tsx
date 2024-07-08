@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card";
 import { ArrowLeftIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import GoBack from "@/components/reusable/GoBack";
 
 const Translator = () => {
   const [res, setRes] = useState<string | null>(null);
@@ -29,12 +30,7 @@ const Translator = () => {
   return (
     <div className="flex items-center justify-center h-[100vh]">
       <Card className="p-4 gap-3 flex flex-col">
-        <Link href={`/`}>
-          {" "}
-          <Button variant="outline">
-            <ArrowLeftIcon /> <span>Go back to main page.</span>
-          </Button>
-        </Link>
+        <GoBack />
         <CardHeader>Simple LLM App to translate English to Nepali</CardHeader>
         <CardDescription>
           I learned how to use Language <br />
