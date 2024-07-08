@@ -1,15 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import React from "react";
-import { LuArrowBigRight } from "react-icons/lu";
+import PageLink from "../reusable/PageLink";
 const Home = () => {
   return (
     <div>
-      <Link href={`translator`}>
-        <Button variant="link">
-          <LuArrowBigRight /> <span>Simple Language Translator</span>
-        </Button>
-      </Link>
+      <PageLink link="/translator" text={"Simple Language translator"} />
+      <PageLink link="/chatbot" text={"Simple Chatbot"} />
     </div>
   );
 };
