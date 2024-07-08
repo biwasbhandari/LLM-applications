@@ -11,7 +11,7 @@ const praser = new StringOutputParser();
 
 export const generateResponse = async (humanMessage: string) => {
   const messages = [
-    new SystemMessage("Translate the following from English into Italian."),
+    new SystemMessage("Translate the following from English into Nepali."),
     new HumanMessage(humanMessage),
   ];
 

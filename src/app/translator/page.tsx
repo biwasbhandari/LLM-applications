@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { generateResponse } from "@/utils/basicPrompt";
+import { generateResponse } from "@/ai/tools/basicPrompt";
 
 const Home = () => {
   const [res, setRes] = useState<string | null>(null);
@@ -22,7 +22,6 @@ const Home = () => {
         type="text"
         value={humanMessage}
         onChange={(e) => setHumanMessage(e.target.value)}
-        // placeholder="Type something to translate."
         required
       />
       <button onClick={displayContent}>Generate</button>
