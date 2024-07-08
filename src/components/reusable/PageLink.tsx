@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { LuArrowBigRight } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
+import { BiRightArrow, BiRightArrowAlt } from "react-icons/bi";
 
 interface PageLinkProps {
   link: string;
@@ -14,7 +14,7 @@ const PageLink: React.FC<PageLinkProps> = ({ link, text, icon }) => {
     <div>
       <Link href={link}>
         <Button variant="link">
-          {icon || <LuArrowBigRight />} <span>{text}</span>
+          {icon || <BiRightArrowAlt />} <span className="text-xl">{text}</span>
         </Button>
       </Link>
     </div>
