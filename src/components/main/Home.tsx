@@ -5,6 +5,7 @@ const Home = () => {
     <div>
       <PageLink link="/translator" text={"Simple Language translator"} />
       <PageLink link="/chatbot" text={"Simple Chatbot"} />
+      <PageLink link="/bidenchat" text={"Political Biden Chatbot"} />
     </div>
   );
 };
