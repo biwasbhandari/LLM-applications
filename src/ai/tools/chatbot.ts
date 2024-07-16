@@ -1,5 +1,4 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
 import { InMemoryChatMessageHistory } from "@langchain/core/chat_history";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableWithMessageHistory } from "@langchain/core/runnables";
